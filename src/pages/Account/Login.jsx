@@ -6,11 +6,11 @@ import logo from '../../images/logo.png';
 const Login = () => {
   return (
     //start UI login
-    <section className="px-20 grid grid-cols-12 gap-3 bg-[#2e2e2e]">
+    <section className=" grid lg:grid-cols-12 md:grid-cols-8 pm:grid-cols-1  bg-[#2e2e2e] ">
       {/* ---------form login------------- */}
-      <div className="  col-span-5 py-10">
-        <h2 className=" text-white text-6xl text-center">LOGIN</h2>
-        <form className="mt-8 mb-2 px-20 ">
+      <div className=" lg:col-span-5 md:col-span-4 pm:col-span-1 lg:p-14 md:p-10 sm:p-14 pm:p-8  bg-[#C8C8C8]">
+        <form className="mt-8 mb-2 lg:p-20 md:p-10 pm:p-8 sm:p-20 bg-[#2e2e2e] rounded-xl shadow-[10px_10px_11px_0px_rgba(0,0,0,0.25)] ">
+          <h2 className=" text-white text-6xl text-center">LOGIN</h2>
           <div className="mb-1 flex flex-col gap-4">
             {/* -----input email------- */}
             <div className=" flex items-center text-center text-white ">
@@ -65,8 +65,7 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="border-gradient-to-r border from-violet-500 to-fuchsia-500 mt-6  bg-[#111111] text-white py-2 px-auto  w-full rounded-lg"
-            fullWidth
+            className="border-gradient-to-r  mt-6  bg-white border-2 border-black text-black py-2 px-auto font-bold  w-full rounded-lg"
           >
             LOGIN
           </button>
@@ -81,7 +80,7 @@ const Login = () => {
       </div>
 
       {/* ----------description on right-------- */}
-      <div className=" col-span-7 border-l ">
+      <div className="md:block pm:hidden lg:col-span-7 md:col-span-4 sm:col-span-1 border-l-2 py-14 ">
         <div className=" flex flex-col relative">
           <div className=" flex justify-center items-center">
             <img src={logo} alt="logo" className="w-1/2 " />

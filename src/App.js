@@ -2,7 +2,7 @@ import Login from './pages/Account/Login';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Login />
     </div>
   );
